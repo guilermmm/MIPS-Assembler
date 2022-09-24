@@ -8,7 +8,6 @@ public class Assembler {
     static List<String> labels;
 
     public static void assemble(String filepath) throws IOException {
-        System.out.println(InstructionTables.rTable);
         File assembly = new File(filepath);
         Scanner sc = new Scanner(assembly);
         List<List<String>> instructions = new ArrayList<>();
