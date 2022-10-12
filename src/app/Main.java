@@ -6,6 +6,6 @@ import model.Assembler;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    Assembler.assemble("src/resources/assembly.asm");
+    Assembler.assemble("src/resources/test.asm");
   }
 }

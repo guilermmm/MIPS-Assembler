@@ -87,6 +87,8 @@ public class Assembler {
             }
         }
 
+        System.out.println(newList);
+
         return newList;
     }
 
@@ -109,7 +111,7 @@ public class Assembler {
             case "sll", "srl":
                 rs = registers.get(1);
                 rt = registers.get(0);
-                sa = toBinary(Integer.parseInt(list.get(2)));
+                sa = registers.get(2);
                 break;
 
             case "jr":
